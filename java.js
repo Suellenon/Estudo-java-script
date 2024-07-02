@@ -69,6 +69,20 @@ console.log(`Seu antecessor é ${n-1} e seu sucessor é ${n+1}`)
 
 
 //13 questao
+let nota1 = 4
+let nota2 = 5
+let nota3 = 8
+let media = (nota1 + nota2 + nota3)/3
+
+
+if(media >= 7)
+   console.log((media)  + 'Aprovado')
+else(media < 7)
+   console.log((media) + 'reprovado')
+
+
+  
+
 
 
 
@@ -104,6 +118,8 @@ console.log(`Seu antecessor é ${n-1} e seu sucessor é ${n+1}`)
 
 //questao 21
 var frutas = [ "maçã", "banana","laranja"];
+frutas.push('uva')
 console.log(frutas[3]);
-console.log(frutas[2])
+// console.log(frutas[2])
+
 //não tem fruta na posição 3
