@@ -24,10 +24,18 @@ calcularArea(4)
 //5 questao
 let A = 2
 let B = 4
-let C = 1
+let C = 10
 let resultado= A + B
-console.log(resultado)
-console.log(resultado < C)
+
+if(resultado < C){
+  console.log(`A soma de ${A} + ${B} é igual a ${resultado} e é menor que: ${C}`)
+}else{
+  console.log(`A soma de ${A} + ${B} é igual a ${resultado} e é maior que: ${C}`)
+}
+
+
+// console.log(resultado)
+// console.log(resultado < C)
 
 // 6 questao
 var numero = "5"
@@ -49,6 +57,9 @@ console.log(soma);
 
 // 8 questao
 
+for (var contador = 0; contador < 5; contador++){
+
+}console.log(contador);
 
 
 
@@ -57,6 +68,33 @@ console.log(soma);
 //9 questao
 let n= 40
 console.log(`Seu antecessor é ${n-1} e seu sucessor é ${n+1}`)
+
+
+
+//               outra forma 
+//  function imprimirAntecessorESucessor(numero) {
+//    // Calcula o antecessor/   var antecessor = numero - 1;
+  
+//    // Calcula o sucessor
+//    var sucessor = numero + 1;
+  
+//   // Imprime na tela
+//    console.log("Número: " + numero);
+//    console.log("Antecessor: " + antecessor);
+//    console.log("Sucessor: " + sucessor);
+//  }
+
+// // Exemplo de uso:
+// var numero = 10;
+// imprimirAntecessorESucessor(numero);
+
+
+
+
+
+
+
+
 
 //10questao
 var x = 10
@@ -93,7 +131,7 @@ if(numero === 5){
 
 
 //13 questao
-let nota1 = 5
+let nota1 = 5  
 let nota2 = 6
 let nota3 = 5
 let media = (nota1 + nota2 + nota3)/3
