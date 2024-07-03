@@ -18,7 +18,7 @@ console.log ( comidas[3])
 function calcularArea(lado){
   console.log(` A área de um quadrado de lado ${lado} é ${lado* lado}m² `) 
   }
-calcularArea(4)
+calcularArea(4)                                // Chama a função com o valor  que quer
 
 
 //5 questao
@@ -117,10 +117,8 @@ if(numero === 5){
 //12 questao
  let array=[1, 2, 3, 4,5,6,7,8,9,10]
  let arrayPares=[]
-
-   
+  
  
-
 
 
 
@@ -174,7 +172,7 @@ for( var i =1; i<=10;i++){
 
 //16 questao
    let valor1 = 10
-   let valor2 = 5
+   let valor2 = 0
    let divisão = valor1/valor2
    if(valor2 == 0){ console.log(`Não é possivel dividir`)
 
@@ -192,6 +190,12 @@ for( var i =1; i<=10;i++){
 //19 questao 
 const numeros=[12, 36, 52, 77]
 const numeros1=[]
+const numerosomado= 7
+for( let i = 0; i<numeros.length; i++){ 
+   numeros[i]=numeros[i] + numerosomado;
+   numeros1.push(numeros[i]);
+}
+console.log(numeros1)
 
   
 
