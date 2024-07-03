@@ -42,8 +42,7 @@ console.log(soma);
 
 // 7 questao
 
-
-
+  
 
 
 
@@ -60,17 +59,31 @@ let n= 40
 console.log(`Seu antecessor é ${n-1} e seu sucessor é ${n+1}`)
 
 //10questao
-
-
+var x = 10
+function minhaFuncao(){
+   var y = 5;
+   console.log(x + y);
+}
+minhaFuncao();
 
 
 //11 questao
-
+var numero = "5";
+if(numero === 5){
+   console.log("O número é igual a 5.");
+}else if (numero == 5){
+   console.log("O número é igual a 5, com conversão de tipo.");
+}else{
+   console.log('O número não é igual a 5.')
+}
 //12 questao
-// let array=[1, 2, 3, 4,5,6,7,8,9,10]
-// let arrayPares=[]
+ let array=[1, 2, 3, 4,5,6,7,8,9,10]
+ let arrayPares=[]
 
-// funcion
+   
+ 
+
+
 
 
     
@@ -80,9 +93,9 @@ console.log(`Seu antecessor é ${n-1} e seu sucessor é ${n+1}`)
 
 
 //13 questao
-let nota1 = 2
-let nota2 = 3
-let nota3 = 4
+let nota1 = 5
+let nota2 = 6
+let nota3 = 5
 let media = (nota1 + nota2 + nota3)/3
  if(media < 5){
    console.log(`Média  ${media}, resultado : Reprovado`)
@@ -102,6 +115,15 @@ let media = (nota1 + nota2 + nota3)/3
 
 
 //14 questao
+function calculoImc(peso){
+  
+
+}
+
+
+
+
+
 
 
 
@@ -114,7 +136,7 @@ for( var i =1; i<=10;i++){
 
 //16 questao
    let valor1 = 10
-   let valor2 = 0
+   let valor2 = 5
    let divisão = valor1/valor2
    if(valor2 == 0){ console.log(`Não é possivel dividir`)
 
@@ -127,7 +149,13 @@ for( var i =1; i<=10;i++){
 // 18 questao
 
 
+
+
 //19 questao 
+const numeros=[12, 36, 52, 77]
+const numeros1=[]
+
+  
 
 
 
