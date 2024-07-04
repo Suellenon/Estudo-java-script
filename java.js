@@ -49,7 +49,15 @@ console.log(soma);
 
 
 // 7 questao
+ if (A === B){
+   C = A + B
 
+ }
+   else {C = A * B
+
+   
+ }
+ console.log(C)
   
 
 
@@ -68,6 +76,13 @@ for (var contador = 0; contador < 5; contador++){          // var é global func
 //9 questao
 let n= 40
 console.log(`Seu antecessor é ${n-1} e seu sucessor é ${n+1}`)
+
+
+function antESuc(x){
+   console.log(` O antecessor de ${x} é ${x-1}`)
+   console.log(` O sucessor de ${x} é ${x +1}`)                    // resposta prof
+}
+   antESuc(99)
 
 
 
@@ -115,9 +130,14 @@ if(numero === 5){
    console.log('O número não é igual a 5.')
 }
 //12 questao
- let array=[1, 2, 3, 4,5,6,7,8,9,10]
- let arrayPares=[]
-  
+ const numerico =[1, 2, 3, 4,5,6,7,8,9,10]
+ const Pares=[]                                                  // Para array é mais apropriado usar const.
+ numerico.forEach((elemento)=>{
+   if( elemento%2 == 0){
+      Pares.push(elemento)
+   }
+ })
+  console.log(Pares)
  
 
 
@@ -142,19 +162,48 @@ let media = (nota1 + nota2 + nota3)/3
  }
 
   
+// resposta de prof
 
 
+function calcMedia(n1, n2,n3){
+   let media = (n1 +n2 +n3) / 3
+   return media.toFixed(2)
+}
+let minhaMedia = calcMedia(7, 8, 5)
+if(minhaMedia >= 7){
+   console.log(`Média ${minhaMedia}, resultado: Aprovado .`)
+}else if(minhaMedia >= 5){
+   console.log(`Média ${minhaMedia}, resultado: Recuperação.`)
 
+}else{
+   console.log(`Média ${minhaMedia}, resultado: Reprovado.`)
+}
 
 
    
 
 
 //14 questao
-function calculoImc(peso){
   
 
-}
+
+function calcImc(peso, altura){
+   let imc = peso / (altura * altura)
+
+   if(imc <= 18.5){
+      console.log(`Seu IMC é ${imc}, resultado: Abaixo do Peso`)
+   }else if( imc <= 25){
+      console.log(`Seu IMC é ${imc}, resultado: Peso Ideal`)
+   }else if( imc <= 30){
+      console.log(`Seu IMC é ${imc},Resultado: SobrePeso`)
+   
+   }else if( imc <=40){
+      console.log(`Seu IMC é ${imc}, Resultado: Obesidade`)
+   }else{
+      console.log(`Seu IMC é ${imc}, resultado : Obesidade Morbida`)
+   }
+}calcImc(1.80, 80)                                                                           // se chamar no final não precisar fazer variavel no inicio
+
 
 
 
@@ -170,6 +219,18 @@ for( var i =1; i<=10;i++){
    console.log(`${numero} x ${i}= ${produto}`)
 }
 
+// resposta do prof
+function tabuada(x){
+   for ( let i = 0; i <= 10; i++){
+      console.log(`${x} x ${i} = ${x * i}`)
+   }
+}tabuada(8)
+
+
+
+
+
+
 //16 questao
    let valor1 = 10
    let valor2 = 0
@@ -179,12 +240,67 @@ for( var i =1; i<=10;i++){
    }else{console.log (divisão)}
       
 
+
+
+   // resposta do prof
+let n1 = 10
+let n2 = 0
+
+function divisao(x, y){
+   try{
+      if(y == 0){
+         throw Error("Zero não é permitido")
+      }else{
+         console.log(x / y)
+      }
+   }catch(error){
+      console.error(error)
+   }
+}
+
+divisao(n1,n2)
+
+
 //17 questao
+function calculaGasolina(distancia){
+   const autonomia = 9.8
+   const preco =5.24
+
+   let valor = ((distancia * 2) /  autonomia * preco).toFixed(2)
+   console.log(`Para fazer ${distancia}kms ida e volta você deve abastecer ${valor}R$`)
+
+}
+ calculaGasolina(2900)
+
+
+
+
+
+
+
 
 
 // 18 questao
-
-
+   function fatorial(num){
+    try{
+      if(num < 0){
+         throw Error (" Não pode fatorial de numero negativo")
+         
+      } else if (num == 0 ){
+         return 1
+      } else{
+         let fatorial = 1;
+         for(let i = 2; i<= num;i++){
+            fatorial *= i;
+         }
+         return  fatorial;
+      }
+   } catch (error){
+         console.log(error)
+     
+      } 
+   }
+console.log("Fatorial de 5:" + fatorial(5))
 
 
 //19 questao 
@@ -197,14 +313,26 @@ for( let i = 0; i<numeros.length; i++){
 }
 console.log(numeros1)
 
-  
-
-
+  // resposta do professor
+  const arraQ = [12, 36, 52, 77]
+   const resQ =[]
+   
+for( let elemento of arraQ){
+   let final = elemento + 7
+   resQ.push (final)
+}
+console.log(resQ)
 
 
 
 // questao20
-
+ let RG = true
+ let CNH = true
+ if(RG || CNH){
+   console.log("Faz a prova")
+ }else{
+   console.log("Vai pra casa")
+ }
 
 
 //questao 21
