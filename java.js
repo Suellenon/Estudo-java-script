@@ -57,7 +57,7 @@ console.log(soma);
 
 // 8 questao
 
-for (var contador = 0; contador < 5; contador++){
+for (var contador = 0; contador < 5; contador++){          // var é global funciona fora do bloco , let não; é local,, se ficar fora de bloco aparece que a variavel não foi definida
 
 }console.log(contador);
 
